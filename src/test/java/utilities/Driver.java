@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public class Driver {
 
-    private Driver(){
+    private Driver() {
         // Driver class'indan obje olusturulmasini engellemek icin
         // Singleton Pattern kullandik
     }
@@ -20,28 +20,29 @@ public class Driver {
 
     public static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if (driver == null){
+        if (driver == null) {
             String secilenBrowser = ConfigReader.getProperty("browser");
 
-            switch (secilenBrowser){
+            switch (secilenBrowser) {
 
-                case "firefox" :
+                case "firefox":
                     driver = new FirefoxDriver();
                     break;
 
-                case "edge" :
+                case "edge":
                     driver = new EdgeDriver();
                     break;
 
-                case "safari" :
+                case "safari":
                     driver = new SafariDriver();
                     break;
 
                 default:
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--disable-search-engine-choice-screen");
+                    //options.addArguments("--disable-search-engine-choice-screen");
+                     options.addArguments("--incognito");
                     driver = new ChromeDriver(options);
             }
             driver.manage().window().maximize();
@@ -51,7 +52,7 @@ public class Driver {
         return driver;
     }
 
-    public static void quitDriver(){
+    public static void quitDriver() {
         driver.quit();
         driver = null;
     }

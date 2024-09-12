@@ -7,10 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.TeamPages.MustafaPage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.MustafaMethods;
-import utilities.TestBaseRapor;
+import utilities.*;
 
 import java.time.Duration;
 
@@ -29,6 +26,8 @@ public class TC_MI009_Pozitif_MustafaIsmail extends TestBaseRapor {
         MustafaMethods.hauseHeavenLogin(ConfigReader.getProperty("MIusername"),ConfigReader.getProperty("MIpassword"));
 
         HomePage homePage =new HomePage();
+        ReusableMethods.waitForVisibility(homePage.sefUsercookies,5);
+        homePage.sefUsercookies.click();
         MustafaPage mustafaPage = new MustafaPage();
         Faker faker = new Faker();
 
@@ -38,6 +37,9 @@ public class TC_MI009_Pozitif_MustafaIsmail extends TestBaseRapor {
         Assert.assertTrue(mustafaPage.securityButton.isDisplayed());
         extentTest.pass("Security butonu görüntülendi.");
 
+
+        ReusableMethods.hover(mustafaPage.securityButton);
+        ReusableMethods.wait(1);
         mustafaPage.securityButton.click();
         extentTest.pass("Security butonu tıklandı.");
 
