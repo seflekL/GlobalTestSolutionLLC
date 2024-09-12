@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    bize verilen gorevlerde tek tek method, class veya package secmek yerine
+    hazirladigimiz her test method'unun hangi testlerde calisacagini grup olarak yazabiliriz
+
+    gruplari calistirmak istedigimizde
+    2 seyi belirlemeliyiz
+
+    1- calisacak veya calismayacak gruplar
+    2- calisacak  method/class/package'larin nerede aranacagi
+
+-->
+
+<suite name="belirlenen gruplari calistirma">
+    <test name="ozel grup testi">
+
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+
+
+
+    </test>
+</suite>

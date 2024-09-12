@@ -1,0 +1,37 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    CrossBrowser testlerde amac butun framework'u farkli browser'larla calistirmak degil
+    Secilen belirli testleri farkli browser'larla calistirarak
+    uygulamanin her browser'la calistigini kontrol etmektir
+
+    Normal olarak bir .xml dosyasi calistiginda
+    hangi browser ile calisacagini configuration.properties'den alir
+
+    Cross browser test calistirmak istedigimizde
+    .xml dosyasi calisirken gidip configuration.properties dosyasini degistiremeyecegimiz icin
+    OZEL bir dizayn yapmamiz gerekir
+
+    Crossbrowser calisacak class'lar ozel dizayn edildiginden
+    diger class'lar ile karistirilmamasi icin
+    AYRI BIR PACKAGE olusturmaniz tavsiye edilir
+-->
+
+<suite name="Cross browser testler">
+
+    <test name="Chrome ile calisacak testler">
+        <parameter name="calisacakBrowser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.TC_B002_Pozitif_Bunyamin"></class>
+         </classes>
+    </test>
+
+    <test name="Firefox ile calisacak testler">
+        <parameter name="calisacakBrowser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.TC_B002_Pozitif_Bunyamin"></class>
+         </classes>
+    </test>
+
+</suite>

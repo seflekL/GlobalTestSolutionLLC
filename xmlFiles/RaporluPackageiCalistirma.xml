@@ -1,0 +1,13 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Raporlu calistirma">
+    <test name="Raporlu testler">
+
+        <packages>
+            <package name="tests.day16_HTMLReports_DataProvider"></package>
+        </packages>
+
+    </test>
+</suite>
