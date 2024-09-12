@@ -19,6 +19,8 @@ public class TC_R004_PozitifBug_Rana extends TestBaseRapor {
         extentTest.pass("Tarayici acildi ve Hause Heaven sitesine gidildi.");
 
         HomePage homePage = new HomePage();
+        ReusableMethods.waitForVisibility(homePage.sefUsercookies,10);
+        homePage.sefUsercookies.click();
         homePage.HomePageListingLink.click();
         extentTest.pass("Headerdaki listing linkine tiklandi.");
 
@@ -46,5 +48,6 @@ public class TC_R004_PozitifBug_Rana extends TestBaseRapor {
 
         Driver.getDriver().quit();
         extentTest.pass("Ziyaretci browseri kapatir.");
+        }
     }
-}
+
