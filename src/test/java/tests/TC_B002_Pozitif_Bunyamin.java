@@ -68,7 +68,7 @@ public class TC_B002_Pozitif_Bunyamin extends TestBaseRapor {
         Driver.quitDriver();
         extentTest.pass("Driver kapatildi.");
 
-        ////
+        //////
     }
 
 }
