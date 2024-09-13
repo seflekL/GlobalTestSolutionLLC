@@ -24,14 +24,14 @@
         <parameter name="calisacakBrowser" value="chrome"></parameter>
         <classes>
             <class name="tests.TC_B002_Pozitif_Bunyamin"></class>
-         </classes>
+        </classes>
     </test>
 
     <test name="Firefox ile calisacak testler">
         <parameter name="calisacakBrowser" value="firefox"></parameter>
         <classes>
             <class name="tests.TC_B002_Pozitif_Bunyamin"></class>
-         </classes>
+        </classes>
     </test>
 
 </suite>

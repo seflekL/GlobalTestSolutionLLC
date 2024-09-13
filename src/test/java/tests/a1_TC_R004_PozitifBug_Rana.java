@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
-public class TC_R004_PozitifBug_Rana extends TestBaseRapor {
+public class a1_TC_R004_PozitifBug_Rana extends TestBaseRapor {
     @Test
     public void Test01() throws InterruptedException {
 

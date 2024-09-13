@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;
 
-public class TC_ME004_Pozitif_Merve extends TestBaseRapor {
+public class b1_TC_ME004_Pozitif_Merve extends TestBaseRapor {
     @Test
     public void test04(){
         HomePage homePage=new HomePage();

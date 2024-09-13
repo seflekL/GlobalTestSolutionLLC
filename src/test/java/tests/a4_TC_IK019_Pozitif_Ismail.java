@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-public class TC_IK019_Pozitif_Ismail extends TestBaseRapor {
+public class a4_TC_IK019_Pozitif_Ismail extends TestBaseRapor {
 
     @Test
     public void test05() {

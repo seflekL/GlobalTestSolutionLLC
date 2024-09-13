@@ -1,6 +1,5 @@
 package tests;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +13,7 @@ import utilities.TestBaseRapor;
 
 import java.time.Duration;
 
-public class TC_B002_Pozitif_Bunyamin extends TestBaseRapor {
+public class a2_TC_B002_Pozitif_Bunyamin extends TestBaseRapor {
 
     @Test
     public void test02(){

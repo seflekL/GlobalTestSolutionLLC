@@ -13,7 +13,7 @@ import java.time.Duration;
 
 import static utilities.Driver.driver;
 
-public class TC_MI009_Pozitif_MustafaIsmail extends TestBaseRapor {
+public class a3_TC_MI009_Pozitif_MustafaIsmail extends TestBaseRapor {
 
     @Test
     public void test09(){

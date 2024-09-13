@@ -9,7 +9,7 @@ import utilities.TestBaseRapor;
 
 import static utilities.Driver.driver;
 
-public class TC_M025_Negatif_Mehmet extends TestBaseRapor {
+public class b4_TC_M025_Negatif_Mehmet extends TestBaseRapor {
 
     @Test
     public void Test25 (){

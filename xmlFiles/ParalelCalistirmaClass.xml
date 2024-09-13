@@ -37,7 +37,7 @@
 
 -->
 
-<suite name="smoke test suiti" thread-count="2" parallel="classes" verbose="3">
+<suite name="smoke test suiti" thread-count="2" parallel="classes" verbose="2">
     <test name="smoke test">
         <classes>
             <class name="tests.day13_TestNG_Framework.C04_PageClassiKullanma"></class>

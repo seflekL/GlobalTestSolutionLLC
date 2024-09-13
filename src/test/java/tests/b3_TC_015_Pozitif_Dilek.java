@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
-public class TC_015_Pozitif_Dilek extends TestBaseRapor {
+public class b3_TC_015_Pozitif_Dilek extends TestBaseRapor {
     @Test
     public void projeSilmeTesti(){
         extentTest=extentReports.createTest

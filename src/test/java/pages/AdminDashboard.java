@@ -13,6 +13,18 @@ public class AdminDashboard {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    //yeni
+    @FindBy (xpath = "(//*[@class='form-control'])[1]")
+    public WebElement adminUsername;
+    @FindBy (xpath = "(//*[@class='form-control'])[2]")
+    public WebElement adminPassword;
+    @FindBy (xpath = "//*[@class='signin']")
+    public WebElement adminSignin;
+    @FindBy (xpath = "//*[@class='fa fa-bed']")
+    public WebElement RealEstate;
+    @FindBy (xpath = "//*[@id='cms-plugins-real-estate-category']")
+    public WebElement Categories;
+    //------------------------------------------------
     // [Hause Heaven Admin] - [Login fonksiyonu] Bölümünün elementleri
 
     @FindBy(xpath = "//*[@name='username']")
@@ -60,6 +72,87 @@ public class AdminDashboard {
 
     @FindBy(xpath = "(//*[@class='breadcrumb-item active'])[2]")
     public WebElement sayfaDogrulama;
+
+    @FindBy (xpath = "(//*[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+    public  WebElement RealEstateDelete;
+
+    @FindBy (xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+    public  WebElement RealEstateConfirmDelete;
+
+    @FindBy (xpath = "//*[@id='stack-footer']")
+    public  WebElement RealEstateSuccess;
+
+    @FindBy (xpath = "//*[@class='fa fa-edit']")
+    public WebElement blog;
+
+    @FindBy (xpath = "//li[@id='cms-plugins-blog-post']")
+    public WebElement posts;
+
+    @FindBy (xpath = "//*[@class='btn btn-secondary action-item']")
+    public WebElement create;
+
+    @FindBy (xpath = "//input[@id='name']")
+    public WebElement createNewpostName;
+
+    @FindBy (xpath = "(//*[@class='mb-2'])[3]")
+    public WebElement createHousedesign;
+
+    @FindBy (xpath = "(//input[@type='checkbox']")
+    public  WebElement createHouseArchitecture;
+
+    @FindBy (xpath = "(//*[@class='btn btn-info'])[1]")
+    public WebElement createSaveExit;
+
+    @FindBy (xpath = "//*[@class='text-start column-key-name sorting']")
+    public WebElement PostName;
+
+    @FindBy (xpath = "(//*[@class='fa fa-edit'])[2]")
+    public WebElement PostEdit;
+
+    @FindBy (xpath = "(//*[@class='invalid-feedback'])[1]")
+    public WebElement PostNameError;
+
+    @FindBy (xpath = "(//*[@class='invalid-feedback'])[3]")
+    public WebElement elemTexts;
+
+    @FindBy (xpath = "(//*[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+    public WebElement PostsDelete;
+
+    @FindBy (xpath = "//*[@class='float-end btn btn-danger delete-crud-entry']")
+    public WebElement ConfirmDelete;
+
+    @FindBy (xpath = "//div[@id='stack-footer']")
+    public WebElement Success;
+
+
+    @FindBy (xpath = "//tr[@role='row']")
+    public  List<WebElement> CategoriesList;
+
+
+    @FindBy (xpath = "//*[@data-action='create']")
+    public  WebElement RealEstateCreate;
+
+    @FindBy (xpath = "//*[@id='name']")
+    public  WebElement RealEstateCreateName;
+
+    @FindBy (xpath = "(//button[@type='submit'])[1]")
+    public  WebElement RealEstateSaveExit;
+
+
+    @FindBy (xpath = "(//*[@class='fa fa-edit'])[2]")
+    public  WebElement RealEstateEdit;
+
+
+
+
+
+
+
+
+
+
+
+
 
     //-------------İsmail Kaya Son--------------\\
 
@@ -234,6 +327,22 @@ public class AdminDashboard {
 
     @FindBy (xpath = "(//*[@class='fa fa-trash'])[1]")
     public WebElement reviewSayfasiDeleteBUtonu;
+
+    @FindBy(xpath = "//*[@title='Profile']")
+    public WebElement daschboardLinki;
+    @FindBy (xpath = "//*[@title='Product']")
+    public WebElement reviewSayfasiProductButonu;
+
+    @FindBy (xpath = "//*[@title='ID']")
+    public WebElement reviewSayfasiIDButonu;
+    @FindBy (xpath = "//*[@type='search']")
+    public WebElement dilekSearchKutusu;
+
+    @FindBy (xpath = "//*[@class='dataTables_empty']")
+    public WebElement dilekNoreccordyazisi;
+    @FindBy (xpath = "(//*[@class='d-none d-sm-inline'])[2]")
+    public WebElement dilekShovFromYazisi;
+
 
 
 
